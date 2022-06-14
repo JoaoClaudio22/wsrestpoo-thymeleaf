@@ -1,4 +1,4 @@
-# Webservice RestFul + Frontend
+# Web services RESTful com Spring framework e JPA
 Sistema desenvolvido em SpringBoot com uma API Restful e um Front em Thymeleaf. Desenvolvido como projeto de estudo da disciplina de POO
 
 <h1 align="center">Primeiros passos:</h1>
