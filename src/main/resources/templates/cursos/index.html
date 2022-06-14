@@ -1,0 +1,56 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lista de Cursos</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+
+	<div class="container">
+
+	
+
+		<h1>Cursos</h1>
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th scope="col">id</th>
+					<th scope="col">Titulo</th>
+					<th scope="col">Carga Horaria</th>
+					<th scope="col">Data de Inicio</th>
+					<th scope="col"></th>
+					<th scope="col"></th>
+
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="cursos:  ${cursos}">
+					<th scope="row" th:text="${cursos.id}">1</th>
+					<td th:text="${cursos.tituloCurso}"></td>
+					<td th:text="${cursos.cargaHoraria}"></td>
+					<td th:text="${#dates.format(cursos.dataInicio, 'dd/MM/yyyy')}"></td>
+					<td class="col-1"><a class="btn btn-primary btn-sm" th:href="@{/cursos/{cursosId}/edit(cursosId = ${cursos.id} )}" role="button">Editar</a></td>
+					<td class="col-1"><a class="btn btn-danger btn-sm" th:href="@{/cursos/{cursosId}/delete(cursosId = ${cursos.id})}" role="button">Excluir</a></td>
+				</tr>
+
+
+			</tbody>
+		</table>
+		<a class="btn btn-primary" href="/cursos/new" role="button">Adicionar Curso</a>
+		
+
+	</div>
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
