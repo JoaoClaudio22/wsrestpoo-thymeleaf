@@ -11,7 +11,7 @@ Sistema desenvolvido em SpringBoot com uma API Restful e um Front em Thymeleaf. 
 <h1 align="center">Configurando:</h1>
 
 <ol>
-  <li>Crie um banco de dados com o nome de: wsrestfulpoo-thymeleaf</li>
+  <li>Crie um banco de dados Mysql com o nome de: wsrestfulpoo-thymeleaf</li>
   <li>Faça a configuração do arquivo 'application.properties' com o seu usuário e senha do Banco de dados
     <ul>
       <li>Caminho do arquivo: "WsRestFul-Thymeleaf\src\main\resources\application.properties"</li>
