@@ -5,7 +5,8 @@ Sistema desenvolvido em SpringBoot com uma API Restful e um Front em Thymeleaf. 
 <ol>
   <li>Baixar o projeto como .rar</li>
   <li>Descompactar o arquivo no local de sua preferencia</li>
-  <li>Em seu editor de código abra um novo projeto e abra o arquivo pom.xml</li>
+  <li>Ou faça o git clone do projeto</li>
+<li>Em seu editor de código abra um novo projeto e abra o arquivo pom.xml</li>
 </ol>
 <h1 align="center">Configurando:</h1>
 
